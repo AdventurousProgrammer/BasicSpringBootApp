@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>HelloWorld App</title>
+	</head>
+	<body>
+		<tr th:each="user: ${users}">
+	    	<td th:text="${user.username}" />
+	    	<td th:text="${user.role}" />
+		</tr>
+	<!--
+		<p th:each="user: ${users}">
+			<p>User Name</p><p th:text="${user.username}"></p>
+			<p>User Role</p><p th:text="${user.role}"></p>
+			<p>User Email</p><p th:text="${user.email}"></p>
+		</p>
+		-->
+	</body>
+</html>

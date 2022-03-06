@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>HelloWorld App</title>
+	</head>
+	<body> 
+		<div th:switch="${user.role}">
+			<p th:case="'ADMIN'">Switch Case: Administrator user</p>
+			<p th:case="'MANAGER'">Switch Case: Manager User</p>
+			<p th:case="'GUEST'">Switch Case: Guest User</p>
+			<p th:case="'*'">User is some other thing</p>
+		</div>
+	</body>
+</html>

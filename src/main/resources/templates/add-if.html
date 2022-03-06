@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>HelloWorld App</title>
+	</head>
+	<body>
+	<!-- ${user.role} == 'ADMIN' -->
+		<p>Role: <span th:if="${user.role == 'ADMIN'}">YOU ARE TOTALLY AN ADMIN</span></p>
+	</body>
+</html>
